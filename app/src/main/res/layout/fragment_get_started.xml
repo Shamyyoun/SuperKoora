@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/get_started_padding"
+    android:paddingRight="@dimen/get_started_padding">
+
+    <views.LatoRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/get_started_title_margin"
+        android:text="@string/slogan"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/get_started_title_text_size" />
+
+    <views.LatoLightTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/get_started_desc_margin"
+        android:gravity="center"
+        android:text="@string/get_started_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/get_started_desc_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/get_started_center_panel_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_item_image_height"
+                android:src="@drawable/medal" />
+
+            <views.LatoThinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_item_text_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/app_item_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_item_image_height"
+                android:src="@drawable/cup" />
+
+            <views.LatoThinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_item_text_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/app_item_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_item_image_height"
+                android:src="@drawable/watch" />
+
+            <views.LatoThinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_item_text_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/app_item_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <views.LatoSemiBoldButton
+        android:id="@+id/button_getStarted"
+        style="@style/FormButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button_bg"
+        android:text="@string/get_started" />
+
+    <views.LatoRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/get_started_bottom_text_margin"
+        android:text="@string/have_account"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/get_started_bottom_text_size" />
+
+    <views.LatoRegularTextView
+        android:id="@+id/text_login"
+        style="@style/ClickableTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/get_started_bottom_margin"
+        android:text="@string/login_u"
+        android:textColor="@android:color/white" />
+</LinearLayout>

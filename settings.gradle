@@ -1,0 +1,1 @@
+include ':app', ':stickyparallax_scrollimageview', ':floating_action_button', ':floating_action_button', ':app_msg'

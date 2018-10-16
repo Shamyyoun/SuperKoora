@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/get_started_padding"
+        android:paddingRight="@dimen/get_started_padding">
+
+        <views.LatoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/get_started_title_margin"
+            android:text="@string/sign_up"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/get_started_title_text_size" />
+
+        <views.OpenSansLighEditText
+            android:id="@+id/text_name"
+            style="@style/FormEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/username_edit_text_margin"
+            android:drawableLeft="@drawable/username_icon"
+            android:hint="@string/your_name"
+            android:inputType="textCapWords" />
+
+        <views.OpenSansLighEditText
+            android:id="@+id/text_email"
+            style="@style/FormEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email_icon"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress" />
+
+        <views.OpenSansLighEditText
+            android:id="@+id/text_username"
+            style="@style/FormEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/username_edit_text_margin"
+            android:drawableLeft="@drawable/username_icon"
+            android:hint="@string/username" />
+
+        <views.OpenSansLighEditText
+            android:id="@+id/text_password"
+            style="@style/FormEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password_icon"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <views.OpenSansLighEditText
+            android:id="@+id/text_rePassword"
+            style="@style/FormEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password_icon"
+            android:hint="@string/re_password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:id="@+id/view_signUp"
+            style="@style/LogoButtonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/super_koora_button_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/logo_button_icon_height"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sk_login" />
+
+            <views.LatoThinTextView
+                style="@style/LogoButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_super_koora" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <views.LatoThinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_acc"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sign_up_bottom_panel_text_size" />
+
+            <views.LatoLightTextView
+                android:id="@+id/text_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sign_up_bottom_panel_button_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/sign_up_bottom_panel_padding"
+                android:text="@string/login_u"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sign_up_bottom_panel_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/slider_bottom_items_margin"
+        android:padding="@dimen/slider_bottom_items_padding"
+        app:fillColor="@color/pager_indicator_main"
+        app:pageColor="@color/pager_indicator_sec"
+        app:strokeWidth="0dp" />
+
+    <views.LatoRegularTextView
+        android:id="@+id/text_sign_up"
+        style="@style/ClickableTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/slider_bottom_items_margin"
+        android:paddingBottom="@dimen/slider_bottom_items_padding"
+        android:text="@string/sign_up_u"
+        android:textColor="@color/black_text"
+        android:visibility="gone" />
+</FrameLayout>

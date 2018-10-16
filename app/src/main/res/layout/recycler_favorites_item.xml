@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/favorites_item_padding_tb"
+    android:paddingLeft="@dimen/favorites_item_padding_lr"
+    android:paddingRight="@dimen/favorites_item_padding_lr"
+    android:paddingTop="@dimen/favorites_item_padding_tb">
+
+    <FrameLayout
+        android:layout_width="@dimen/favorites_item_image_size"
+        android:layout_height="@dimen/favorites_item_image_size">
+
+        <ImageView
+            android:id="@+id/image_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/default_team_flag" />
+
+        <ImageView
+            android:id="@+id/image_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+    <views.OpenSansSemiBoldTextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/favorites_item_title_padding"
+        android:paddingRight="@dimen/favorites_item_title_padding"
+        android:text="Italy"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/favorites_item_title_text_size" />
+
+    <ImageButton
+        android:id="@+id/image_remove"
+        android:layout_width="@dimen/favorites_item_remove_size"
+        android:layout_height="@dimen/favorites_item_remove_size"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/favorites_item_remove_padding"
+        android:src="@drawable/remove_icon" />
+</LinearLayout>

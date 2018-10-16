@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:windowBackground">@color/gray_screen_bg</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!-- Transparent StatusBar Screen theme. -->
+    <style name="TransparentStatusBarTheme" parent="AppTheme"></style>
+
+    <!-- Transparent Screen theme. -->
+    <style name="TransparentTheme" parent="TransparentStatusBarTheme"></style>
+
+    <!-- Video Screen theme. -->
+    <style name="VideoTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/video_player_bg</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:windowBackground">@color/video_player_bg</item>
+    </style>
+
+    <!-- White ProgressBar theme.-->
+    <style name="WhiteProgressBarTheme" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Transparent StatusBar Screen theme v+19. -->
+    <style name="TransparentStatusBarTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- Transparent Screen theme v+19. -->
+    <style name="TransparentTheme" parent="TransparentStatusBarTheme">
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

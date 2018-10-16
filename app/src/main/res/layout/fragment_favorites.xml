@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/get_started_padding"
+        android:paddingRight="@dimen/get_started_padding">
+
+        <views.LatoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/get_started_title_margin"
+            android:gravity="center"
+            android:text="@string/select_favorites"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/get_started_title_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/get_started_center_panel_padding"
+            android:paddingTop="@dimen/get_started_center_panel_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <views.OpenSansLighAutoCompleteTextView
+                    android:id="@+id/text_search"
+                    style="@style/FormEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/username_edit_text_margin"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/favourite_cup_icon"
+                    android:hint="@string/enter_favorites"
+                    android:inputType="textAutoComplete|textAutoCorrect" />
+
+                <ImageButton
+                    android:id="@+id/button_add"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add_icon" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <views.LatoThinButton
+            android:id="@+id/button_select"
+            style="@style/FormButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/get_started_bottom_margin"
+            android:background="@drawable/blue_button_bg"
+            android:text="@string/select" />
+    </LinearLayout>
+
+</LinearLayout>

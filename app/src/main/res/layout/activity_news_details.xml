@@ -1,0 +1,145 @@
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/action_bar">
+
+            <include
+                android:id="@+id/view_progress"
+                layout="@layout/view_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/view_error"
+                layout="@layout/view_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/view_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.mahmoudelshamy.stickyparallax.StickyParallaxScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/action_bar"
+                    android:overScrollMode="never"
+                    app:zoomRatio="1.4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="240dp">
+
+                            <ImageView
+                                android:id="@+id/image_default"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/default_news_image" />
+
+                            <ImageView
+                                android:id="@+id/image_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray_screen_bg"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="sticky">
+
+                                <views.OpenSansSemiBoldTextView
+                                    android:id="@+id/text_newsTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/gray_screen_bg"
+                                    android:padding="@dimen/news_details_text_padding"
+                                    android:text="Barcelona Signs Arda Turan"
+                                    android:textColor="@color/black_text"
+                                    android:textSize="@dimen/news_details_title_text_size" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/news_details_seperator_height"
+                                    android:background="@color/news_title_seperator" />
+                            </LinearLayout>
+
+                            <views.OpenSansLightTextView
+                                android:id="@+id/text_desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/relativeLayout1"
+                                android:paddingBottom="@dimen/news_details_text_padding"
+                                android:paddingLeft="@dimen/news_details_text_padding"
+                                android:paddingRight="@dimen/news_details_text_padding"
+                                android:text="test"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/news_details_desc_text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/news_details_seperator_height"
+                                android:background="@color/primary" />
+
+                            <views.OpenSansLightTextView
+                                android:id="@+id/text_tags"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/news_details_text_padding"
+                                android:text="test"
+                                android:textColor="@color/tags_text"
+                                android:textSize="@dimen/news_details_desc_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.mahmoudelshamy.stickyparallax.StickyParallaxScrollView>
+
+                <com.mahmoudelshamy.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="@dimen/floating_button_margin"
+                    android:src="@drawable/share_icon"
+                    app:fab_colorNormal="@color/primary"
+                    app:fab_colorPressed="@color/primary_dark" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

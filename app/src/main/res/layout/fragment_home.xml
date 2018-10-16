@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <views.PagerContainer
+        android:id="@+id/pager_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="@dimen/matches_pager_width"
+            android:layout_height="@dimen/matches_pager_height"
+            android:layout_gravity="center_horizontal" />
+    </views.PagerContainer>
+
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/home_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <views.LatoRegularTextView
+                style="@style/HomeStickyHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/featured_news" />
+
+            <include
+                android:id="@+id/view_newsItem1"
+                layout="@layout/recycler_news_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_item_height" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_items_spacing"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/view_newsItem2"
+                    layout="@layout/recycler_news_item"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/content_item_height"
+                    android:layout_weight="2" />
+
+                <include
+                    android:id="@+id/view_newsItem3"
+                    layout="@layout/recycler_news_item"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/content_item_height"
+                    android:layout_marginLeft="@dimen/content_items_spacing"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <views.LatoRegularTextView
+                style="@style/HomeStickyHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/featured_videos" />
+
+            <include
+                android:id="@+id/view_video1"
+                layout="@layout/recycler_videos_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_item_height" />
+
+            <include
+                android:id="@+id/view_video2"
+                layout="@layout/recycler_videos_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_item_height"
+                android:layout_marginTop="@dimen/content_items_spacing" />
+        </LinearLayout>
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <views.LatoRegularTextView
+            style="@style/TransfersColumn.Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@android:color/white"
+            android:text="@string/player_name"
+            android:textColor="@color/primary" />
+
+        <View
+            android:layout_width="@dimen/transfers_column_seperator_width"
+            android:layout_height="match_parent"
+            android:background="@color/transfers_cell_seperator" />
+
+        <views.LatoRegularTextView
+            style="@style/TransfersColumn.Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/nat_bg"
+            android:text="@string/nat"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="@dimen/transfers_column_seperator_width"
+            android:layout_height="match_parent"
+            android:background="@color/transfers_cell_seperator" />
+
+        <views.LatoRegularTextView
+            style="@style/TransfersColumn.Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/from_bg"
+            android:text="@string/from"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="@dimen/transfers_column_seperator_width"
+            android:layout_height="match_parent"
+            android:background="@color/transfers_cell_seperator" />
+
+        <views.LatoRegularTextView
+            style="@style/TransfersColumn.Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/to_bg"
+            android:text="@string/to"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="@dimen/transfers_column_seperator_width"
+            android:layout_height="match_parent"
+            android:background="@color/transfers_cell_seperator" />
+
+        <views.LatoRegularTextView
+            style="@style/TransfersColumn.Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/fees_bg"
+            android:text="@string/fees"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/transfers_sort_column_height"
+        android:background="@color/transfers_cell_bg1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_sortByPlayerName"
+            style="@style/TransfersSortColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:src="@drawable/sort_icon" />
+
+        <View
+            android:layout_width="@dimen/transfers_column_seperator_width"
+            android:layout_height="match_parent"
+            android:background="@color/transfers_cell_seperator" />
+
+        <ImageButton
+            android:id="@+id/button_sortByNationality"
+            style="@style/TransfersSortColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/sort_icon" />
+
+        <View
+            android:layout_width="@dimen/transfers_column_seperator_width"
+            android:layout_height="match_parent"
+            android:background="@color/transfers_cell_seperator" />
+
+        <ImageButton
+            android:id="@+id/button_sortByFromClub"
+            style="@style/TransfersSortColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/sort_icon" />
+
+        <View
+            android:layout_width="@dimen/transfers_column_seperator_width"
+            android:layout_height="match_parent"
+            android:background="@color/transfers_cell_seperator" />
+
+        <ImageButton
+            android:id="@+id/button_sortByToClub"
+            style="@style/TransfersSortColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/sort_icon" />
+
+        <View
+            android:layout_width="@dimen/transfers_column_seperator_width"
+            android:layout_height="match_parent"
+            android:background="@color/transfers_cell_seperator" />
+
+        <ImageButton
+            android:id="@+id/button_sortByFees"
+            style="@style/TransfersSortColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/sort_icon" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+</LinearLayout>

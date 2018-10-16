@@ -1,0 +1,174 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Actionbar Icon -->
+    <style name="ActionbarIcon">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">@dimen/actionbar_icon_padding</item>
+        <item name="android:paddingRight">@dimen/actionbar_icon_padding</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!-- Form EditText -->
+    <style name="FormEditText">
+        <item name="android:padding">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/form_edit_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/form_edit_text_padding_lr</item>
+        <item name="android:paddingRight">@dimen/form_edit_text_padding_lr</item>
+        <item name="android:drawablePadding">@dimen/form_edit_text_drawable_padding</item>
+    </style>
+
+    <!-- Logo Button Layout -->
+    <style name="LogoButtonPanel">
+        <item name="android:paddingLeft">@dimen/logo_button_panel_padding_lr</item>
+        <item name="android:paddingRight">@dimen/logo_button_panel_padding_lr</item>
+        <item name="android:paddingTop">@dimen/logo_button_panel_padding_tb</item>
+        <item name="android:paddingBottom">@dimen/logo_button_panel_padding_tb</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Login Button Text -->
+    <style name="LogoButtonText">
+        <item name="android:layout_marginLeft">@dimen/logo_button_text_margin</item>
+        <item name="android:textSize">@dimen/logo_button_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Clickable TextView -->
+    <style name="ClickableTextView">
+        <item name="android:paddingTop">@dimen/clickable_text_padding_top</item>
+        <item name="android:paddingBottom">@dimen/clickable_text_padding</item>
+        <item name="android:paddingLeft">@dimen/clickable_text_padding</item>
+        <item name="android:paddingRight">@dimen/clickable_text_padding</item>
+        <item name="android:textSize">@dimen/clickable_text_size</item>
+    </style>
+
+    <!-- Form Button -->
+    <style name="FormButton">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/form_button_padding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/form_button_text_size</item>
+    </style>
+
+    <!-- Home Sticky Header -->
+    <style name="HomeStickyHeader">
+        <item name="android:background">@color/home_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/home_sticky_header_padding</item>
+        <item name="android:tag">sticky</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/home_sticky_header_text_size</item>
+    </style>
+
+    <!-- Content Item Layout -->
+    <style name="ContentItemLayout">
+        <item name="rv_rippleDuration">0</item>
+        <item name="rv_zoom">true</item>
+        <item name="rv_zoomScale">1.1</item>
+    </style>
+
+    <!-- Content Item Title Layout-->
+    <style name="ContentItemTitleLayout">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:alpha">0.75</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/content_item_padding_lr</item>
+        <item name="android:paddingRight">@dimen/content_item_padding_lr</item>
+    </style>
+
+    <!-- Content Item Title-->
+    <style name="ContentItemTitle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingBottom">@dimen/content_item_padding_tb</item>
+        <item name="android:paddingTop">@dimen/content_item_padding_tb</item>
+        <item name="android:paddingLeft">@dimen/content_item_padding_lr</item>
+        <item name="android:paddingRight">@dimen/content_item_padding_lr</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/content_item_title_text_size</item>
+    </style>
+
+    <!-- Transfers Column -->
+    <style name="TransfersColumn">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/transfers_column_padding_tb</item>
+        <item name="android:paddingBottom">@dimen/transfers_column_padding_tb</item>
+        <item name="android:paddingLeft">@dimen/transfers_column_padding_lr</item>
+        <item name="android:paddingRight">@dimen/transfers_column_padding_lr</item>
+    </style>
+
+    <!-- Transfers Column Header-->
+    <style name="TransfersColumn.Header">
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/transfers_header_text_size</item>
+    </style>
+
+    <!-- Transfers Sort Column -->
+    <style name="TransfersSortColumn">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!-- H2H Panel Title -->
+    <style name="H2HPanelTitle">
+        <item name="android:background">@color/primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">@dimen/h2h_panel_title_padding</item>
+        <item name="android:textSize">@dimen/h2h_panel_title_text_size</item>
+    </style>
+
+    <!-- H2H Submit TextView -->
+    <style name="H2HSubmitTextView">
+        <item name="android:layout_marginTop">@dimen/h2h_items_spacing</item>
+        <item name="android:background">@drawable/blue_button_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/h2h_submit_text_view_padding</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/h2h_submit_text_view_size</item>
+    </style>
+
+    <!-- Super Koora Card View -->
+    <style name="SKCardView">
+        <item name="android:layout_marginRight">@dimen/card_view_margin</item>
+        <item name="android:layout_marginLeft">@dimen/card_view_margin</item>
+        <item name="android:layout_marginBottom">@dimen/card_view_margin</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">@dimen/card_view_radius</item>
+        <item name="cardElevation">@dimen/card_view_elevation</item>
+    </style>
+
+    <!-- H2H Row -->
+    <style name="H2HRow">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/h2h_row_padding_lr</item>
+        <item name="android:paddingRight">@dimen/h2h_row_padding_lr</item>
+        <item name="android:paddingTop">@dimen/h2h_row_padding_tb</item>
+        <item name="android:paddingBottom">@dimen/h2h_row_padding_tb</item>
+    </style>
+
+    <!-- H2H Row ImageView -->
+    <style name="H2HRowImageView">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!-- H2H Row Text -->
+    <style name="H2HRowText">
+        <item name="android:layout_marginLeft">@dimen/h2h_row_text_margin</item>
+        <item name="android:layout_marginRight">@dimen/h2h_row_text_margin</item>
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">@dimen/h2h_result_text_size</item>
+    </style>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/slider_image4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slider_bottom_panel_height"
+        android:layout_gravity="bottom"
+        android:background="@drawable/slider_bottom_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <views.LatoMediumTextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/slider_title_margin"
+            android:layout_marginRight="@dimen/slider_title_margin"
+            android:layout_marginTop="@dimen/slider_title_margin"
+            android:text="Welcome to Super Koora"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/slider_title_text_size" />
+
+        <views.LatoLightTextView
+            android:id="@+id/text_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/slider_desc_margin"
+            android:layout_marginRight="@dimen/slider_desc_margin"
+            android:layout_marginTop="@dimen/slider_desc_margin_top"
+            android:gravity="center_horizontal"
+            android:text="@string/slider_desc1"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/slider_desc_text_size" />
+
+    </LinearLayout>
+</FrameLayout>

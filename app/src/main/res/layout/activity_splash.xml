@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_bg" />
+
+    <ImageView
+        android:layout_width="@dimen/full_logo_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/full_logo_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/splash_logo1" />
+
+    <ImageView
+        android:id="@+id/image_ball"
+        android:layout_width="@dimen/full_logo_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/full_logo_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/splash_logo2" />
+</FrameLayout>

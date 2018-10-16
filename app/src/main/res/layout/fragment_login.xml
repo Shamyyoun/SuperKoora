@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/get_started_padding"
+    android:paddingRight="@dimen/get_started_padding">
+
+        <views.OpenSansLighEditText
+            android:id="@+id/text_username"
+            style="@style/FormEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/username_icon"
+            android:hint="@string/username_or_email" />
+
+        <views.OpenSansLighEditText
+            android:id="@+id/text_password"
+            style="@style/FormEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password_icon"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:id="@+id/view_superKooraLogin"
+            style="@style/LogoButtonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/super_koora_button_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/logo_button_icon_height"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sk_login" />
+
+            <views.LatoThinTextView
+                style="@style/LogoButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_super_koora" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_facebookLogin"
+            style="@style/LogoButtonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/facebook_button_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/logo_button_icon_height"
+                android:adjustViewBounds="true"
+                android:src="@drawable/fb_login" />
+
+            <views.LatoThinTextView
+                style="@style/LogoButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_facebook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_twitterLogin"
+            style="@style/LogoButtonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/twitter_button_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/logo_button_icon_height"
+                android:adjustViewBounds="true"
+                android:src="@drawable/twitter_login" />
+
+            <views.LatoThinTextView
+                style="@style/LogoButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_twitter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_googlePlusLogin"
+            style="@style/LogoButtonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gplus_button_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/logo_button_icon_height"
+                android:adjustViewBounds="true"
+                android:src="@drawable/gplus_login" />
+
+            <views.LatoThinTextView
+                style="@style/LogoButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_gplus" />
+        </LinearLayout>
+</LinearLayout>

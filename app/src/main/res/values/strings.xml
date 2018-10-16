@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">Super Koora</string>
+    <string name="facebook_app_id">507055206130877</string>
+    <string name="facebook_app_name">Super Koora</string>
+
+    <string name="super_koora">Super Koora</string>
+    <string name="slogan">Mobile App Slogan</string>
+    <string name="get_started_text">consectetur adipiscing elit.\nVivamus elementum eget nisl sit amet porta(Description).</string>
+    <string name="get_started">Get Started</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="login_u"><u>Login</u></string>
+    <string name="lorem_ipsum">LOREM\nipsum dolor</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re-Password</string>
+    <string name="login_super_koora">Login with Super Koora</string>
+    <string name="login_facebook">Login with Facebook</string>
+    <string name="login_twitter">Login with Twitter</string>
+    <string name="login_gplus">Login with Google+</string>
+    <string name="read_terms"><u>Read our terms.</u></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="your_name">Your Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="sign_up_super_koora">Sign up to Super Koora</string>
+    <string name="already_have_acc">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="sign_up_text">consectetur adipiscing elit.\nVivamus elementum eget nisl sit amet porta(Description).</string>
+    <string name="select_favorites">Select Your Favourite\nTeam &amp; League</string>
+    <string name="favorites_text">consectetur adipiscing elit,\nVivamus elementum.</string>
+    <string name="select">Select</string>
+    <string name="enter_favorites">Enter Your Favorites</string>
+    <string name="sign_up_u"><u>Sign up</u></string>
+    <string name="choose_team_from_list">Choose a team from drop down list</string>
+    <string name="featured_news">Featured News</string>
+    <string name="featured_videos">Featured Videos</string>
+    <string name="home">Home</string>
+    <string name="news">News</string>
+    <string name="videos">Videos</string>
+    <string name="from">From</string>
+    <string name="share">Share...</string>
+    <string name="player_name">Player Name</string>
+    <string name="nat">Nat.</string>
+    <string name="to">To</string>
+    <string name="fees">Fees</string>
+    <string name="transfers">Transfers</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="connection_error">Connection error</string>
+    <string name="team_team">Team / Team</string>
+    <string name="submit">Submit</string>
+    <string name="head2head">Head 2 Head</string>
+    <string name="select_team_a">Select Team (A)</string>
+    <string name="select_team_b">Select Team (B)</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_country_a">Select Country (A)</string>
+    <string name="select_country_b">Select Country (B)</string>
+    <string name="nation_nation">Nation / Nation</string>
+    <string name="team_nations_teams">Team / Nation\'s Teams</string>
+    <string name="nations_teams_nations_teams">Nation\'s Teams / Nation\'s Teams</string>
+    <string name="team_vs_team">Team vs. Team</string>
+    <string name="nation_vs_nation">Nation vs. Nation</string>
+    <string name="team_vs_nations_team">Team vs. Nation\'s Team</string>
+    <string name="nations_team_vs_nations_team">Nation\'s Team vs. Nation\'s Team</string>
+    <string name="vs">vs.</string>
+    <string name="country">Country</string>
+    <string name="games_played">Games Played</string>
+    <string name="clean_sheets">Clean Sheets</string>
+    <string name="win">Win</string>
+    <string name="draw">Draw</string>
+    <string name="lose">Lose</string>
+    <string name="goals">Goals</string>
+    <string name="top_scorer">Top Scorer</string>
+    <string name="most_played">Most Played</string>
+    <string name="players_scored">Players Scored</string>
+    <string name="biggest_win">Biggest Win</string>
+    <string name="stadium">Stadium</string>
+    <string name="live_scores">Live Scores</string>
+    <string name="competitions">Competitions</string>
+    <string name="all_games">All Games</string>
+    <string name="live">Live</string>
+    <string name="now">\ Now</string>
+    <string name="round">Round</string>
+    <string name="standings_c">STANDINGS</string>
+    <string name="schedule_c">SCHEDULE</string>
+    <string name="top_scorers_c">TOP SCORERS</string>
+    <string name="champions_c">CHAMPIONS</string>
+    <string name="team_c">TEAM</string>
+    <string name="gp">GP</string>
+    <string name="w">W</string>
+    <string name="d">D</string>
+    <string name="l">L</string>
+    <string name="pts">PTS.</string>
+    <string name="gs">GS</string>
+    <string name="gc">GC</string>
+    <string name="gd">GD</string>
+    <string name="group">GROUP</string>
+    <string name="player_name_c">PLAYER NAME</string>
+    <string name="goals_c">GOALS</string>
+    <string name="required">Required</string>
+    <string name="enter_valid_email">Enter a valid email address</string>
+    <string name="password_at_least_8">Password should be at least 8 characters</string>
+    <string name="passwords_does_not_match">Password doesn\'t match</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="close">Close</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="invalid_parameter">Invalid parameters</string>
+    <string name="username_isnt_available">Username isn\'t available</string>
+    <string name="unexpected_error">Unexpected error</string>
+    <string name="unexpected_error_try_again">Unexpected error. Try again</string>
+    <string name="registered_successfully">Registered successfully</string>
+    <string name="username_doesnt_exist">Username doesn\'t exist</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="add">Add</string>
+    <string name="choose_your_favorite_teams">Choose your favorite teams</string>
+    <string name="error_loading_data">Error loading data</string>
+    <string name="tap_to_refresh">Tap to refresh</string>
+    <string name="no_data_found">No data found</string>
+    <string name="no_news">No news right now :-)</string>
+    <string name="no_videos">No videos right now :-)</string>
+
+    <string name="slider_title1">Welcome to Super Koora</string>
+    <string name="slider_desc1">consectetur adipiscing elit. Vivamus elementum eget nisl sit amet porta.</string>
+    <string name="slider_title2">Transfer News</string>
+    <string name="slider_desc2">consectetur adipiscing elit. Vivamus elementum eget nisl sit amet porta.</string>
+    <string name="slider_title3">Live Scores</string>
+    <string name="slider_desc3">consectetur adipiscing elit. Vivamus elementum eget nisl sit amet porta.</string>
+    <string name="slider_title4">Competitions</string>
+    <string name="slider_desc4">consectetur adipiscing elit. Vivamus elementum eget nisl sit amet porta.</string>
+    <string name="slider_title5">Head 2 Head</string>
+    <string name="slider_desc5">consectetur adipiscing elit. Vivamus elementum eget nisl sit amet porta.</string>
+
+    <string-array name="competition_details_tabs">
+        <item>@string/standings_c</item>
+        <item>@string/schedule_c</item>
+        <item>@string/top_scorer</item>
+        <item>@string/champions_c</item>
+    </string-array>
+
+
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non purus sed tortor placerat fermentum. Donec finibus nunc in tortor elementum, non rhoncus diam suscipit. Pellentesque diam mauris,
+
+accumsan ac enim maximus, sagittis rhoncus enim. Aliquam a faucibus lacus, nec commodo ligula. Nulla quis massa hendrerit, faucibus nunc euismod, porttitor ipsum. Sed scelerisque tortor et magna interdum tincidunt. Sed vitae condimentum nunc. Nunc porttitor ligula eget nisl sagittis sollicitudin.
+
+Suspendisse varius feugiat diam, ut vestibulum nulla pellentesque eget. Etiam facilisis placerat mi, a molestie risus cursus condimentum. In quis suscipit mauris,
+
+dapibus suscipit nunc. Sed dignissim, lorem eget volutpat semper, eros erat maximus felis, vitae luctus felis sapien eu turpis. Sed id lobortis quam. Nullam porta quam nec turpis aliquam sodales.
+
+Proin ornare, ante nec ultrices vehicula, orci libero aliquam ex, ut accumsan lacus felis ac turpis. Sed et sem metus. Cras faucibus enim massa, nec semper lectus finibus eu.
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non purus sed tortor placerat fermentum. Donec finibus nunc in tortor elementum, non rhoncus diam suscipit. Pellentesque diam mauris,
+
+accumsan ac enim maximus, sagittis rhoncus enim. Aliquam a faucibus lacus, nec commodo ligula. Nulla quis massa hendrerit, faucibus nunc euismod, porttitor ipsum. Sed scelerisque tortor et magna interdum tincidunt. Sed vitae condimentum nunc. Nunc porttitor ligula eget nisl sagittis sollicitudin.
+
+Suspendisse varius feugiat diam, ut vestibulum nulla pellentesque eget. Etiam facilisis placerat mi, a molestie risus cursus condimentum. In quis suscipit mauris,
+
+dapibus suscipit nunc. Sed dignissim, lorem eget volutpat semper, eros erat maximus felis, vitae luctus felis sapien eu turpis. Sed id lobortis quam. Nullam porta quam nec turpis aliquam sodales.
+
+Proin ornare, ante nec ultrices vehicula, orci libero aliquam ex, ut accumsan lacus felis ac turpis. Sed et sem metus. Cras faucibus enim massa, nec semper lectus finibus eu.
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non purus sed tortor placerat fermentum. Donec finibus nunc in tortor elementum, non rhoncus diam suscipit. Pellentesque diam mauris,
+
+accumsan ac enim maximus, sagittis rhoncus enim. Aliquam a faucibus lacus, nec commodo ligula. Nulla quis massa hendrerit, faucibus nunc euismod, porttitor ipsum. Sed scelerisque tortor et magna interdum tincidunt. Sed vitae condimentum nunc. Nunc porttitor ligula eget nisl sagittis sollicitudin.
+
+Suspendisse varius feugiat diam, ut vestibulum nulla pellentesque eget. Etiam facilisis placerat mi, a molestie risus cursus condimentum. In quis suscipit mauris,
+
+dapibus suscipit nunc. Sed dignissim, lorem eget volutpat semper, eros erat maximus felis, vitae luctus felis sapien eu turpis. Sed id lobortis quam. Nullam porta quam nec turpis aliquam sodales.
+
+Proin ornare, ante nec ultrices vehicula, orci libero aliquam ex, ut accumsan lacus felis ac turpis. Sed et sem metus. Cras faucibus enim massa, nec semper lectus finibus eu.
+</string>
+</resources>
+

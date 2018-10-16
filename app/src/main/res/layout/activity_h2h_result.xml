@@ -1,0 +1,425 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_screen_bg">
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h2h_header_height">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/h2h_header_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/actionbar_margin_top"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_back"
+                    style="@style/ActionbarIcon"
+                    android:layout_width="@dimen/actionbar_icon_dimen"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_icon" />
+
+                <views.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/team_team"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/h2h_result_text_size" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="@dimen/h2h_result_teams_panel_spacing">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <views.OpenSansTextView
+                        android:id="@+id/text_teamTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AC Milan"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/h2h_result_text_size" />
+
+                    <ImageView
+                        android:id="@+id/image_teamLogo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/debug_milan_flag" />
+                </LinearLayout>
+
+                <views.OpenSansExtraBoldTextView
+                    android:id="@+id/text_vs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/h2h_result_teams_panel_spacing"
+                    android:layout_marginRight="@dimen/h2h_result_teams_panel_spacing"
+                    android:text="@string/vs"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/vs_text_size" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <views.OpenSansTextView
+                        android:id="@+id/text_teamTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Juvintus"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/h2h_result_text_size" />
+
+                    <ImageView
+                        android:id="@+id/image_teamLogo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/debug_juvi_flag_large" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        style="@style/SKCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/card_view_margin">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow style="@style/H2HRow">
+
+                    <FrameLayout>
+
+                        <ImageView
+                            style="@style/H2HRowImageView"
+                            android:layout_width="@dimen/h2h_row_image_view_dimen"
+                            android:layout_height="@dimen/h2h_row_image_view_dimen"
+                            android:src="@drawable/debug_italy_flag2" />
+                    </FrameLayout>
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/country" />
+
+                    <FrameLayout>
+
+                        <ImageView
+                            style="@style/H2HRowImageView"
+                            android:layout_width="@dimen/h2h_row_image_view_dimen"
+                            android:layout_height="@dimen/h2h_row_image_view_dimen"
+                            android:layout_gravity="right"
+                            android:src="@drawable/debug_italy_flag2" />
+                    </FrameLayout>
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/games_played" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="22" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/clean_sheets" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="22" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/win" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="22" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/draw" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="22" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/lose" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="22" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/goals" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="22" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ronaldo" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/top_scorer" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Messi" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ronaldo" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/most_played" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Messi" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/players_scored" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="22" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/biggest_win" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="22" />
+                </TableRow>
+
+                <TableRow style="@style/H2HRow">
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="milan" />
+
+                    <views.OpenSansBoldTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/stadium" />
+
+                    <views.OpenSansTextView
+                        style="@style/H2HRowText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="milan" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

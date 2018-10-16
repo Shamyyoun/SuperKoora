@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SuperKoora.iml" filepath="$PROJECT_DIR$/SuperKoora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_msg/app_msg.iml" filepath="$PROJECT_DIR$/app_msg/app_msg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/floating_action_button/floating_action_button.iml" filepath="$PROJECT_DIR$/floating_action_button/floating_action_button.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stickyparallax_scrollimageview/stickyparallax_scrollimageview.iml" filepath="$PROJECT_DIR$/stickyparallax_scrollimageview/stickyparallax_scrollimageview.iml" />
+    </modules>
+  </component>
+</project>
